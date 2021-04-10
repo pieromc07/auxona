@@ -1,0 +1,35 @@
+{
+  "name": "auxona",
+  "version": "1.0.0",
+  "description": "api auxona ",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pieromc07/auxona.git"
+  },
+  "author": "PIERO MERINO CARPIO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pieromc07/auxona/issues"
+  },
+  "homepage": "https://github.com/pieromc07/auxona#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.12",
+    "@babel/preset-env": "^7.13.12",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "development": "nodemon --exec babel-node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
