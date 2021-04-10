@@ -1,0 +1,24 @@
+### obtener [tracks, albums, playlists, artists] de una busqueda [query]   
+GET http://localhost:5000/v1/search
+    ?query=bandido
+Content-Type: application/json
+
+### obtener [tracks] de una busqueda [query]
+GET http://localhost:5000/v1/search/track
+    ?query=bandido
+Content-Type: application/json
+
+### obtener [albums] de una busqueda [query]
+GET http://localhost:5000/v1/search/album
+    ?query=bandido
+Content-Type: application/json
+
+### obtener [playlist] de una busqueda [query]
+GET http://localhost:5000/v1/search/playlist
+    ?query=bandido
+Content-Type: application/json
+
+### obtener [artist] de una busqueda [query]
+GET http://localhost:5000/v1/search/artist
+    ?query=bandido
+Content-Type: application/json
