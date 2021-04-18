@@ -24,7 +24,6 @@ export const getIdTrackYoutube = async (query) => {
         idYouTube = item.id.videoId
         return { "idYouTube": item.id.videoId }
     })
-    console.log(response);
     return idYouTube
 }
 
@@ -37,8 +36,6 @@ export const durationVideo = async (id) => {
         duration = item.contentDetails.duration
         return { "duration": duration }
     })
-
-    console.log(response);
     return duration
 }
 
