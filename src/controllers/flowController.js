@@ -1,5 +1,5 @@
 import { request, response } from 'express'
-import { flowUserById } from '../services/Deezer/flow.service'
+import { flowRandom, flowUserById } from '../services/Deezer/flow.service'
 
 export const flowUser = async (req = request, res = response) => {
 
@@ -29,7 +29,19 @@ export const flowUser = async (req = request, res = response) => {
 
 export const flow = async (req = request, res = response) => {
     try {
-        //    const flow = await 
+        const flow = await flowRandom()
+        if (!flow) {
+            res.status(404).json({
+                status: 200,
+                message: 'Not Found',
+                data: {}
+            })
+        }
+        res.status(200).json({
+            status: 200,
+            message: 'success',
+            data: flow
+        })
     } catch (error) {
         res.status(500).json({ status: 500, message: 'error on server' })
     }
