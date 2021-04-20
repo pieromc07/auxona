@@ -1,3 +1,5 @@
+### Cada URL es una ruta diferente para cada filter [track, album, playlist, artist]
+
 ### obtener [tracks, albums, playlists, artists] de una busqueda [query]   
 GET http://localhost:5000/v1/search
     ?query=bandido

@@ -1,8 +1,0 @@
-### Get Flow 
-#### Headers 
-##### user : [id del usuario]
-GET http://localhost:5000/v1/flow 
-Content-Type: application/json
-user : 4275438742
-
-http://localhost:5000/v1/flow

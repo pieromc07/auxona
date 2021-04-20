@@ -1,0 +1,7 @@
+### Get Flow with login
+#### Params
+##### user : [id del usuario]
+GET http://localhost:5000/v1/flow/4275438742
+
+### Get flow without login
+GET http://localhost:5000/v1/flow

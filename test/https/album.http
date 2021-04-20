@@ -1,0 +1,4 @@
+### Get album by ID
+#### params
+##### id : [id album]
+GET http://localhost:5000/v1/album/145489442 HTTP/1.1
