@@ -25,6 +25,5 @@ export const getDuration = (data) => {
         }
 
     }
-    console.log(time);
     return time
 }

@@ -5,14 +5,14 @@ import { findAll, findByAlbum, findByArtist, findByPlaylist, findByTrack } from 
 const router = Router()
 
 
-router.get('/search', findAll)
+router.get('/', findAll)
 
-router.get('/search/album', findByAlbum)
+router.get('/album', findByAlbum)
 
-router.get('/search/artist', findByArtist)
+router.get('/artist', findByArtist)
 
-router.get('/search/playlist', findByPlaylist)
+router.get('/playlist', findByPlaylist)
 
-router.get('/search/track', findByTrack)
+router.get('/track', findByTrack)
 
 export default router

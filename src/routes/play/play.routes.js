@@ -3,6 +3,6 @@ import { play } from '../../controllers/PlayController';
 
 const router = Router()
 
-router.get('/play', play)
+router.get('/', play)
 
 export default router

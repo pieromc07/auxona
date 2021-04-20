@@ -22,9 +22,6 @@ export const findByIdDeezer = async (idDeezer) => {
 
 export const create = async(deezer, youtube, title, duration) => {
 
-
-    console.log("create", `deezer: ${deezer} Youtube: ${youtube} `);
-
     try {
         const track = new Track({
             deezer, youtube, title, duration

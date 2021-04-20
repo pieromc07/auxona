@@ -28,13 +28,13 @@ export const play = async (req = request, res = response) => {
                     message: 'success',
                     data: createTrack
                 })
+            } else {
+                res.status(404).json({
+                    status: 404,
+                    message: 'not found',
+                    data: {}
+                })
             }
-            res.status(404).json({
-                status: 404,
-                message: 'not found',
-                data: {}
-            })
-
         }
     } catch (error) {
 
