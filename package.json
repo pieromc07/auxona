@@ -30,6 +30,8 @@
   },
   "scripts": {
     "development": "nodemon --exec babel-node src/index.js",
+    "start": "node build/index.js",
+    "build": "babel -d ./build ./src -s",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
